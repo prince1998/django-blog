@@ -8,13 +8,13 @@ from .models import Blog, BlogAuthor, BlogComment
 from django.contrib.auth.models import User #Blog author or commenter
 
 
-def index(request):
+def index(request): 
     """
     View function for home page of site.
     """
     # Render the HTML template index.html
     return render(
-        request,
+        request, #return HTTPResponse("Hello World")
         'index.html',
     )
     

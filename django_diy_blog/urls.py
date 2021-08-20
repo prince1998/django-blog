@@ -25,7 +25,7 @@ urlpatterns = [
 from django.urls import include
 
 urlpatterns += [
-    path('blog/', include('blog.urls')),
+    path('blog/', include('blog.urls')) #if blog page use blog.urls,
 ]
 
 
